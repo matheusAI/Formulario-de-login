@@ -8,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, #2c2c2c, #ff2525da);
+  background: linear-gradient(120deg, #00018a, #ff2525da);
 }
 form {
   height: 550px;
