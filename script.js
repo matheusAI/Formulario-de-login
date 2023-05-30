@@ -1,11 +1,31 @@
-function logar() {
-  var login = document.getElementById("email").value;
-  var senha = document.getElementById("senha").value;
+const usuários = [
+  {
+    usuário: "Ms2279584@gmail.com",
+    pass: "334118",
+  },
+  {
+    usuário: "Priscilaaquila1b@gmail.com",
+    pass: "admin",
+  },
+];
 
-  if (login == "Ms2279584@gmail.com" && senha == "3341") {
-    alert("Sucesso");
-    location.href = "https://github.com/matheusAI";
-  } else {
-    alert("Usuario ou senha incorretos");
+let botao = document.getElementById("logar");
+
+botao.addEventListener("click", function logar() {
+  let pegaUsuario = document.getElementById("usuario").value;
+  let pegaSenha = document.getElementById("senha").value;
+  let validalogin = false;
+
+  for (let i in usuarios) {
+    if (pegaUsuario == usuarios[i].usuario && pegaSenha == usuarios[i].pass) {
+      validalogin = true;
+      break;
+    }
   }
-}
+
+  if (validalogin == true) {
+    alert("ok");
+  } else {
+    alert("error");
+  }
+});
