@@ -1,12 +1,7 @@
 const usuários = [
   {
     usuário: "Ms2279584@gmail.com",
-    pass: "334118",
-  },
-  {
-    usuário: "Priscilaaquila1b@gmail.com",
-    pass: "admin",
-  },
+    pass: "admin"
 ];
 
 let botao = document.getElementById("logar");
