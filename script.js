@@ -1,7 +1,12 @@
-const usuários = [
+const usuarios = [
   {
-    usuário: "Ms2279584@gmail.com",
-    pass: "admin"
+    usuario: "Ms2279584@gmail.com",
+    pass: "admin",
+  },
+  {
+    usuario: "Priscilaaquila1b@gmail.com",
+    pass: "admin",
+  },
 ];
 
 let botao = document.getElementById("logar");
@@ -18,9 +23,9 @@ botao.addEventListener("click", function logar() {
     }
   }
 
-  if (validalogin == true) {
-    alert("ok");
+  if (validalogin) {
+    alert("OK");
   } else {
-    alert("error");
+    alert("senha ou usuario incorreto");
   }
 });
