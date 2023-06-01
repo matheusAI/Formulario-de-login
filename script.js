@@ -24,7 +24,7 @@ botao.addEventListener("click", function logar() {
   }
 
   if (validalogin) {
-    alert("OK");
+    alert("muito obrigado por visitar meu projeto");
   } else {
     alert("senha ou usuario incorreto");
   }
