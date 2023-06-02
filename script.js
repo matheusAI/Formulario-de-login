@@ -2,7 +2,7 @@ const usuarios = [
   {
     usuario: "admin",
     pass: "admin",
-  }
+  },
 ];
 
 let botao = document.getElementById("logar");
@@ -20,7 +20,7 @@ botao.addEventListener("click", function logar() {
   }
 
   if (validalogin) {
-    alert("muito obrigado por visitar meu projeto");
+    location.href = "https://potfolio-gamma.vercel.app/";
   } else {
     alert("senha ou usuario incorreto");
   }
